@@ -13,7 +13,7 @@ puis lancer le en tant qu'administrateur:
 ScriptInstall_S-GRP-AD01.ps1
 
 -----------------------------------------------------------------------------------------
-Pour lier le serveur Samba, importer le script suivant sur le serveur S-GRP-AD01 puis lancer le en tant qu'administrateur:
+Pour lier le serveur Samba, importer le script suivant sur le serveur S-GRP-AD01 puis lancez le en tant qu'administrateur:
 
 Insert-DataOnSambaAD.ps1
 
