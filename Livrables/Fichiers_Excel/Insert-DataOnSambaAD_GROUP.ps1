@@ -22,9 +22,9 @@ SilenceOutput
 function Create-OrganizationalUnits # OK !
 {
     $PathToOUCSV = "$SharesPath\InitialServerDeploy$\OUs\CSV\"
-    $OUCSVName = "ISEC-Telecom_OUs.csv"
+    $OUCSVName = "ISEC-Group_OUs.csv"
     $FullOUCSVPath = $PathToOUCSV + $OUCSVName
-    $URLtoOUCSV = "https://raw.githubusercontent.com/joeldidier/ActiveDirectory-Monitoring-CESI-Project/master/assets/OU/CSV/ISEC-Telecom_OUs.csv"
+    $URLtoOUCSV = "https://raw.githubusercontent.com/joeldidier/ActiveDirectory-Monitoring-CESI-Project/master/assets/OU/CSV/ISEC-Group_OUs.csv"
 
 
     if (($result = Test-Path -Path "$FullOUCSVPath" -WarningAction SilentlyContinue) -eq $False)
@@ -71,9 +71,9 @@ function Create-Groups # OK !
 
 
     $PathToGroupsCSV = "$SharesPath\InitialServerDeploy$\Groups\CSV\"
-    $GroupsCSVName = "ISEC-Telecom_Groups.csv"
+    $GroupsCSVName = "ISEC-Group_Groups.csv"
     $FullGroupsCSVPath = $PathToGroupsCSV + $GroupsCSVName
-    $URLtoGroupsCSV = "https://raw.githubusercontent.com/joeldidier/ActiveDirectory-Monitoring-CESI-Project/master/assets/Groups/CSV/ISEC-Telecom_Groups.csv"
+    $URLtoGroupsCSV = "https://raw.githubusercontent.com/joeldidier/ActiveDirectory-Monitoring-CESI-Project/master/assets/Groups/CSV/ISEC-Group_Groups.csv"
 
 
     if ((Test-Path -Path "$FullGroupsCSVPath") -eq $False)
@@ -144,11 +144,10 @@ Create-Groups
 function Create-Users # OK !
 {
 
-
     $PathToUsersCSV = "$SharesPath\InitialServerDeploy$\Users\CSV\"
-    $UsersCSVName = "ISEC-Telecom_Users.csv"
+    $UsersCSVName = "ISEC-Group_Users.csv"
     $FullUsersCSVPath = $PathToUsersCSV + $UsersCSVName
-    $URLtoUsersCSV = "https://raw.githubusercontent.com/joeldidier/ActiveDirectory-Monitoring-CESI-Project/master/assets/Users/CSV/ISEC-Telecom_Users.csv"
+    $URLtoUsersCSV = "https://raw.githubusercontent.com/joeldidier/ActiveDirectory-Monitoring-CESI-Project/master/assets/Users/CSV/ISEC-Group_Users.csv"
 
 
     if ((Test-Path -Path "$FullUsersCSVPath") -eq $False)
