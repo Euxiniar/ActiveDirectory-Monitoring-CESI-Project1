@@ -1,5 +1,22 @@
-# Run as ITCOMDOM1 Domain Admin (ITCOMDOM1\administrator) on S-GRP-AD01-ADM
-#C:\Windows\System32\runas.exe /netonly /user:ITCOMDOM1\administrator powershell.exe
+$ServerName = "S-GRP-AD01"
+$NewAdminName = "S-GRP-AD01-ADM"
+$DomainName = "isec-group.local"
+$NetBIOSName = "IGRPDOM1"
+$SharesPath = "C:\Shares"
+$RoamingProfilesFolderName = "Profiles$"
+$RoamingProfilesShareName = "Profiles$"
+$RoamingProfilesPath = "$SharesPath\$RoamingProfilesFolderName"
+$PersonalFoldersDirectory = "$SharesPath\Personal$"
+$ServiceFolderName = "Services"
+$PersonalFolderName = "Personal$"
+
+function SilenceOutput
+{
+    $ProgPref = $ProgressPreference
+    $ProgressPreference = 'SilentlyContinue'
+}
+
+SilenceOutput
 
 # Import OU
 function Create-OrganizationalUnits # OK !
